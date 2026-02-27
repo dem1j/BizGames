@@ -3,11 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
+    <title>Nova Games | Unblocked Games Hub</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="./src/main.jsx"></script>
+    <header>
+      <div class="container nav-content">
+        <a class="logo" onclick="backToGrid()">
+          <i data-lucide="gamepad-2" style="color: white; background: var(--accent); padding: 4px; border-radius: 6px;"></i>
+          NOVA<span>GAMES</span>
+        </a>
+        <div class="search-container">
+          <i data-lucide="search" class="search-icon"></i>
+          <input type="text" id="search-input" placeholder="Search games...">
+        </div>
+        <div style="display: flex; gap: 1rem;">
+          <button style="background: none; border: none; color: var(--text-muted); font-size: 0.875rem; font-weight: 500; cursor: pointer;">Request Game</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div id="grid-view">
+        <section class="hero">
+          <h1>Play the Best <span>Unblocked Games</span></h1>
+          <p>Fast, free, and always accessible. No downloads, no signups. Just click and play.</p>
+        </section>
+
+        <div id="categories" class="categories">
+          <!-- Categories will be injected here -->
+        </div>
+
+        <div id="games-grid" class="games-grid">
+          <!-- Games will be injected here -->
+        </div>
+      </div>
+
+      <div id="player-container" class="player-container">
+        <div class="player-header">
+          <button class="back-btn" onclick="backToGrid()">
+            <i data-lucide="chevron-left"></i>
+            Back to Games
+          </button>
+          <div class="player-actions">
+            <button class="action-btn" onclick="openNewTab()" title="Open in new tab">
+              <i data-lucide="external-link"></i>
+            </button>
+            <button class="action-btn" onclick="toggleFullscreen()" title="Toggle Fullscreen">
+              <i data-lucide="maximize-2"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="iframe-wrapper">
+          <button id="close-fs" class="close-fullscreen hidden" onclick="toggleFullscreen()">
+            <i data-lucide="x"></i>
+          </button>
+          <iframe id="game-iframe" allow="autoplay; fullscreen; keyboard"></iframe>
+        </div>
+
+        <div class="game-details">
+          <div>
+            <h2 id="game-title">Game Title</h2>
+            <p id="game-desc">Game description goes here.</p>
+          </div>
+          <span id="game-cat-tag" style="padding: 0.25rem 0.75rem; background: rgba(99, 102, 241, 0.1); color: var(--accent); border-radius: 9999px; font-size: 0.875rem; font-weight: 600; border: 1px solid rgba(99, 102, 241, 0.2);">
+            Category
+          </span>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container">
+      <div class="footer-content">
+        <div class="logo" onclick="backToGrid()">
+          <i data-lucide="gamepad-2" style="color: white; background: var(--accent); padding: 4px; border-radius: 6px; width: 24px; height: 24px;"></i>
+          NOVA<span>GAMES</span>
+        </div>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact</a>
+        </div>
+        <p>© 2024 Nova Games. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+    </script>
+    <script src="./src/script.js"></script>
   </body>
 </html>
 
