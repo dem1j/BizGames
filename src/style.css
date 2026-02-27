@@ -60,6 +60,35 @@ header {
   color: var(--accent);
 }
 
+.request-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.request-btn:hover {
+  color: black;
+  border-color: var(--accent);
+  background: linear-gradient(270deg, #000000, #facc15, #000000);
+  background-size: 400% 400%;
+  animation: requestGradient 3s ease infinite;
+}
+
+@keyframes requestGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 .search-container {
   flex: 1;
   max-width: 400px;
@@ -194,11 +223,13 @@ header {
   aspect-ratio: 4/3;
   width: 100%;
   object-fit: cover;
+  --base-scale: 1;
+  transform: scale(var(--base-scale));
   transition: transform 0.5s;
 }
 
 .game-card:hover .game-thumbnail {
-  transform: scale(1.1);
+  transform: scale(calc(var(--base-scale) * 1.1));
 }
 
 .game-info {

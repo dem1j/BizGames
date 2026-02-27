@@ -63,8 +63,8 @@ function renderGames() {
   gridContainer.innerHTML = filtered.map(game => `
     <div class="game-card" onclick="playGame('${game.id}')">
       <div style="position: relative; overflow: hidden;">
-        <img src="${game.thumbnail}" alt="${game.title}" class="game-thumbnail" referrerpolicy="no-referrer">
-        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(15, 23, 42, 0.8), transparent);"></div>
+        <img src="${game.thumbnail}" alt="${game.title}" class="game-thumbnail" style="--base-scale: ${game.thumbnailScale || 1}" referrerpolicy="no-referrer">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);"></div>
         <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1rem;">
           <div class="game-category">${game.category}</div>
           <div class="game-title">${game.title}</div>
