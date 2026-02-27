@@ -14,7 +14,7 @@ const gameCat = document.getElementById('game-cat-tag');
 
 async function init() {
   try {
-    const response = await fetch('./src/data/games.json');
+    const response = await fetch(`./src/data/games.json?t=${Date.now()}`);
     allGames = await response.json();
     renderCategories();
     renderGames();
