@@ -15,5 +15,13 @@
     "thumbnail": "https://wallpapers.com/images/hd/friday-night-funkin-official-banner-logo-73yu5uka64ffrsuw.jpg",
     "thumbnailScale": 1.4,
     "category": "Music"
+  },
+  {
+    "id": "retro-bowl-college",
+    "title": "Retro Bowl College",
+    "description": "Manage your own college football team in this retro-style sports game.",
+    "url": "https://db.duckmath.org/html/retro_bowl_college/index.html",
+    "thumbnail": "https://cdn.now.gg/apps-content/com.newstargames.retrobowlcollege/ogimage/retro-bowl-college.jpg",
+    "category": "Sports"
   }
 ]

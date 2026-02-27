@@ -12,6 +12,36 @@ const gameTitle = document.getElementById('game-title');
 const gameDesc = document.getElementById('game-desc');
 const gameCat = document.getElementById('game-cat-tag');
 
+// Secret Easter Egg
+let secretClicks = 0;
+const secretTrigger = document.getElementById('secret-trigger');
+const creditsScreen = document.getElementById('credits-screen');
+
+if (secretTrigger) {
+  secretTrigger.addEventListener('click', () => {
+    secretClicks++;
+    if (secretClicks === 5) {
+      showCredits();
+      secretClicks = 0;
+    }
+    // Reset clicks after 2 seconds of inactivity
+    clearTimeout(window.secretTimer);
+    window.secretTimer = setTimeout(() => {
+      secretClicks = 0;
+    }, 2000);
+  });
+}
+
+window.showCredits = () => {
+  creditsScreen.classList.remove('hidden');
+  creditsScreen.style.display = 'flex';
+};
+
+window.hideCredits = () => {
+  creditsScreen.classList.add('hidden');
+  creditsScreen.style.display = 'none';
+};
+
 async function init() {
   try {
     const response = await fetch(`./src/data/games.json?t=${Date.now()}`);
