@@ -1,90 +1,10 @@
 [
   {
-    "id": "2048",
-    "title": "2048",
-    "description": "Join the numbers and get to the 2048 tile!",
-    "url": "https://play2048.co/",
-    "thumbnail": "https://picsum.photos/seed/2048/400/300",
-    "category": "Puzzle"
-  },
-  {
-    "id": "tetris",
-    "title": "Tetris",
-    "description": "The classic block-stacking puzzle game.",
-    "url": "https://tetris.com/play-tetris",
-    "thumbnail": "https://picsum.photos/seed/tetris/400/300",
-    "category": "Classic"
-  },
-  {
-    "id": "flappy-bird",
-    "title": "Flappy Bird",
-    "description": "Fly through the pipes without hitting them.",
-    "url": "https://flappybird.io/",
-    "thumbnail": "https://picsum.photos/seed/flappy/400/300",
-    "category": "Arcade"
-  },
-  {
-    "id": "paper-io",
-    "title": "Paper.io 2",
-    "description": "Capture as much territory as possible.",
-    "url": "https://paper-io.com/",
-    "thumbnail": "https://picsum.photos/seed/paperio/400/300",
-    "category": "IO"
-  },
-  {
-    "id": "slope",
-    "title": "Slope",
-    "description": "Roll down the slope for as long as possible.",
-    "url": "https://www.crazygames.com/embed/slope",
-    "thumbnail": "https://picsum.photos/seed/slope/400/300",
-    "category": "Action"
-  },
-  {
-    "id": "minecraft-classic",
-    "title": "Minecraft Classic",
-    "description": "The original creative mode Minecraft in your browser.",
-    "url": "https://classic.minecraft.net/",
-    "thumbnail": "https://picsum.photos/seed/minecraft/400/300",
-    "category": "Sandbox"
-  },
-  {
-    "id": "doodle-jump",
-    "title": "Doodle Jump",
-    "description": "Jump as high as you can!",
-    "url": "https://doodlejump.io/",
-    "thumbnail": "https://picsum.photos/seed/doodle/400/300",
-    "category": "Arcade"
-  },
-  {
-    "id": "snake",
-    "title": "Snake",
-    "description": "Eat the apples and grow longer.",
-    "url": "https://www.google.com/logos/2010/pacman10-i.html",
-    "thumbnail": "https://picsum.photos/seed/snake/400/300",
-    "category": "Classic"
-  },
-  {
-    "id": "crossy-road",
-    "title": "Crossy Road",
-    "description": "Why did the chicken cross the road?",
-    "url": "https://www.crazygames.com/embed/crossy-road",
-    "thumbnail": "https://picsum.photos/seed/crossy/400/300",
-    "category": "Arcade"
-  },
-  {
-    "id": "cut-the-rope",
-    "title": "Cut the Rope",
-    "description": "Feed Om Nom with candy!",
-    "url": "https://www.crazygames.com/embed/cut-the-rope",
-    "thumbnail": "https://picsum.photos/seed/cutrope/400/300",
-    "category": "Puzzle"
-  },
-  {
-    "id": "subway-surfers",
-    "title": "Subway Surfers",
-    "description": "Run as fast as you can!",
-    "url": "https://www.crazygames.com/embed/subway-surfers",
-    "thumbnail": "https://picsum.photos/seed/subway/400/300",
+    "id": "1v1-lol",
+    "title": "1v1.lol",
+    "description": "A competitive third-person shooter and building game.",
+    "url": "https://classroom4x.dev/1v1/",
+    "thumbnail": "https://picsum.photos/seed/1v1/400/300",
     "category": "Action"
   }
 ]
